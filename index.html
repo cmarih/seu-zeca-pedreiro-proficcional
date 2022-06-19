@@ -7,22 +7,63 @@
     <title>Seu Zeca - Pedreiro Profissional.</title>
 </head>
 <body>
-   <header>
-    <img>
+   <header class="cabecalho">
+    <img class="cabecalho-img" src="./img/logo-main.svg" alt="Boneco Seu Zeca Pedreiro">
     
-    <nav> <!--Menu de Navegação-->
-        <a href="">Serviços</a>
-        <a href="">Sobre</a>
-        <a href="">Contato</a>
+    <nav class="cabecalho-menu"> <!--Menu de Navegação-->
+        <a class="cabecalho-menu-item" href="">Serviços</a>
+        <a class="cabecalho-menu-item" href="">Sobre</a>
+        <a class="cabecalho-menu-item" href="">Contato</a>
     </nav>
    </header> 
 
-   <main> <!--TAG que indica a divisão principal da página-->
+   <main class="conteudo"> <!--TAG que indica a divisão principal da página-->
+    <section class="conteudo-principal" id="section-main"> 
+        <div class="conteudo-principal-inicio">
+            <h1 class="conteudo-principal-titulo">Construções, Reparos e Reformas</h1>
+           <button>
+            <a class="conteudo-principal-buttom" href="">Solicite um orçamento</a>
+           </button>
+            <p class="conteudo-principal-texto-alt">Grátis e sem compromisso.</p>
+            <img class="conteudo-principal-logo" src="./img/logo-zeca.svg" alt="Logo Seu Zeca">
+        </div>
+    </section>
+           
+    <section class="conteudo-secundario" id="section-services">
+        <h2 class="conteudo-secundario-subtitulo" >Conheça nossos serviços!</h2>
+        <figure class="conteudo-secundario-imagem">
+            <img class="conteudo-secundario-imagem-casa" src="./img/house.svg" alt="Casa de alto padrão">
+            <figcaption class=" conteudo-secundario-legenda"> Construções de alto padrão </figcaption>
+        </figure>
+
+        <figure class="conteudo-secundario-imagem">
+            <img class="conteudo-secundario-imagem-pintor" src="./img/pintura.svg" alt="Homem pintando parede">
+            <figcaption class=" conteudo-secundario-legenda"> Paredes e pinturas </figcaption>
+        </figure>
+
+        <figure class="conteudo-secundario-imagem">
+            <img class="conteudo-secundario-imagem-piso" src="./img/piso.png" alt="Homem trabalhando no chão">
+            <figcaption class=" conteudo-secundario-legenda"> Pisos e Revestimentos </figcaption>
+        </figure>
+
+    </section>
+
+    </section class="conteudo-biografia" id="section-bio">
+        <div class="conteudo-briografia">
+            <p class="conteudo-biografia-resumo"><strong>Zeca Pedreiro</strong>, foi criada pelo pedreiro porfissional autônomo <strong>José Costa</strong>, de 48 anos.  
+
+                Sua jornada vem desde a região Norte do país, em especial Belém do Pará. Com mais de <strong>20 anos </strong>
+                de experiência em construções de <strong>casas de alto padrão</strong>, reformas e reparos em geral, seus serviços 
+                chegam na região de Florianópolis com toda a segurança e credibilidade adquirida ao longo desses anos.
+            </p>
+            <img class="conteudo-biografia-imagem" src="./img/logo-zeca-man.svg" alt="Homem segurando objeto de trabalho.">
+        </div>
+    <section>
 
    </main>
 
-   <footer>
-
+   <footer class="rodape">
+        <p class="rodape-inicio">©2022 Zeca Pedreiro. Todos os Direitos Reservados.</p>
    </footer>
 </body>
 </html>
