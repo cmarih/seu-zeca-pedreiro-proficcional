@@ -12,12 +12,18 @@ body {
     font-size: 100%;
     background: linear-gradient(67.63deg, #CFCFCD 20.87%, #F2F2F1 85.64%);
 }
-
-.cabecalho {
+.cabecalho, 
+.conteudo-principal,
+.resumo-bio,
+.rodape,
+.conteudo-secundario-img {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    
+}
+.cabecalho {
     padding: 24px;
 }
 
@@ -43,32 +49,27 @@ body {
 }
 
 .conteudo-principal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
     margin: 50px;
     padding: 100px;
 }
 
 .conteudo-principal-titulo {
-    padding-bottom: 80px;
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
-    line-height: 79px;
-    text-align: left;
+    font-size: 50px;
     color: #4D2004;
-
+    
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .conteudo-principal-inicio{
+    display: flex;
+    flex-direction: column;
     font-family: 'Sarala';
     font-style: normal;
     font-weight: 400;
-    text-align: center;
+    gap: 32px;
 }
 
 .conteudo-principal-buttom {
@@ -77,16 +78,88 @@ body {
     left: 343px;
     top: 649px;
     background: #4D2004;
-    border: 0px;
+    border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     font-size: 24px;
     line-height: 39px;
     color: #E9EBEC;
+    cursor: pointer;
 }
 
 .conteudo-principal-texto-alt {
-    padding-top: 10px;
     font-size: 18px;
-    line-height: 33px;
     color: #82441F;
+    text-align: center;
+}
+
+.conteudo-secundario {
+    background: #4D2004;
+    height: 667px;
+    text-align: center;
+    padding: 80px;
+}
+
+.conteudo-secundario-subtitulo {
+    color: #E9EBEC;
+    font-family: 'Righteous';
+    font-weight: 200;
+    padding-bottom: 70px;
+}
+
+.conteudo-secundario-imagem{
+    max-width: 386px;
+    min-height: 318px;
+}
+
+.conteudo-secundario-imagem-pintor{
+    max-width: 386px;
+    min-height: 318px;
+}
+
+.conteudo-secundario-legenda {
+    color: #E9EBEC;
+    font-family: 'Sarala';
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.resumo-bio {
+    height: 500px;
+    padding: 30px 60px 0 60px;
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: justify;
+    align-items: center;
+    color: #4C2004;
+
+}
+
+.imagem-biografia {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: space-around;
+}
+
+.rodape {
+    height: 80px;
+    background: #4D2004;
+
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+
+    display: flex;
+}
+
+.rodape-inicio {
+    align-items: center;
 }
